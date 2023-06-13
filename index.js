@@ -10,7 +10,6 @@ function writeSVGFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then(((data) => {
-        console.log(data);
         writeSVGFile('logo.svg', data);
         console.log('Generated logo.svg')
     }))
